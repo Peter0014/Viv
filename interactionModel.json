@@ -1,0 +1,93 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "viv",
+            "intents": [
+                {
+                    "name": "SurroundingArea",
+                    "slots": [
+                        {
+                            "name": "Verkehrsmittel",
+                            "type": "PUBLIC_TRANSPORT",
+                            "samples": [
+                                "AS-Taxi",
+                                "Zug",
+                                "Straßenbahn",
+                                "Bus"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "{Verkehrsmittel} in der Umgebung",
+                        "{Verkehrsmittel} im nahen Umfeld",
+                        "{Verkehrsmittel} um mich herum",
+                        "{Verkehrsmittel} in der Nähe"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "PUBLIC_TRANSPORT",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Bus"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Strassenbahn"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zug"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AS-Taxi"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Verkehrsmittel"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "SurroundingArea",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "Verkehrsmittel",
+                            "type": "PUBLIC_TRANSPORT",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.3450548253.1139630075330"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.3450548253.1139630075330",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Was für Verkehrsmittel sollen abgefragt werden?"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -114,6 +114,9 @@ fabric.properties
 # Editor-based Rest Client
 .idea/httpRequests
 
+# JetBrains .idea Folder
+.idea/
+
 # Contains all API Keys
 /Constants.js
 
