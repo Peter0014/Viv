@@ -4,6 +4,7 @@ This is a small personal project to build an Alexa Skill, that is able to tell w
 
 ### Usage
 ![AlexaBubble][AlexaBubble]
+
 After the Alexa Skill will be released, a simple sentence like 'Alexa, starte Viv." will activate the Skill on your device. The available intents are saved in the [Interaction Model][InteractionModel]. As a side note, this Skill will only be available in the German Skill Store.
 
 ### Software
